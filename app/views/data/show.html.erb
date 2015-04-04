@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @datum.address_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @datum.category %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @datum.data %>
+</p>
+
+<%= link_to 'Edit', edit_datum_path(@datum) %> |
+<%= link_to 'Back', data_path %>

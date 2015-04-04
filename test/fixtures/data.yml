@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  address_id: 1
+  category: MyString
+  data: MyText
+
+two:
+  address_id: 1
+  category: MyString
+  data: MyText
