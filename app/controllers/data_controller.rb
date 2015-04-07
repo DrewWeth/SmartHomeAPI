@@ -7,6 +7,14 @@ class DataController < ApplicationController
     @data = Datum.all
   end
 
+  def change
+    # address
+    # category
+    # value
+
+    render :json => Datum.where(:id => params["address_id"].to_i, :category => params["category"])
+  end
+
   # GET /data/1
   # GET /data/1.json
   def show

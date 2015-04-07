@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
   root 'data#index'
+
+  get 'data/change' => 'data#change'
+  post 'data/change' => 'data#change'
+
+  get 'data/get' => 'api#get'
+  match 'data/post' => 'api#post', via: [:get, :post]
+
   resources :data
 
   get 'addresses/switch' => 'addresses#switch'
+
   resources :addresses
 
   # The priority is based upon order of creation: first created -> highest priority.

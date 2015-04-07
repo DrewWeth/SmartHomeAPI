@@ -1,0 +1,15 @@
+Usage
+
+
+.com/data/post?
+
+parameters
+ address_id=1
+ category=
+ value=
+
+.com/data/get?
+
+parameters
+address=1
+category=1
